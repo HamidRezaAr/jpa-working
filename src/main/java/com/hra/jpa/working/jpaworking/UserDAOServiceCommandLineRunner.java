@@ -17,8 +17,8 @@ public class UserDAOServiceCommandLineRunner implements CommandLineRunner {
     private UserDAOService userDaoService;
     @Override
     public void run(String... arg0) throws Exception {
-        User user = new User("Jack", "Admin");
-        //New User is created : User [id=1, name=Jack, role=Admin]
+        User user = new User("Aram", "Admin");
+        //New User is created : User [id=1, name=Aram, role=Admin]
         long insert = userDaoService.insert(user);
         log.info("New User is created : " + user);
     }
